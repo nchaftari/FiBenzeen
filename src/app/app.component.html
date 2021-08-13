@@ -1,0 +1,32 @@
+<mat-toolbar color="primary">
+
+    <button mat-button routerLink="/home">
+<!-- <mat-icon>home</mat-icon>  -->
+    FiBenzeen?</button>
+    <button mat-button routerLink="/about">
+      <!-- <mat-icon>home</mat-icon>  -->
+          About</button>
+
+    <!-- This fills the remaining space of the current row -->
+    <span class="fill-remaining-space"></span>
+    <!-- <mat-form-field floatLabel="never" class="search">
+      <input matInput placeholder="Search">
+  </mat-form-field> -->
+    <button mat-icon-button color="accent"><mat-icon  >search</mat-icon> </button>
+
+
+    <!-- <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+        <button mat-button routerLink="/">Logout</button>
+    </div> -->
+    <!-- <button mat-button [mat-menu-trigger-for]="menu" fxHide="false" fxHide.gt-sm>
+ <mat-icon>menu</mat-icon>
+</button> -->
+
+</mat-toolbar>
+<!--<mat-menu x-position="before" #menu="matMenu">
+    <button mat-menu-item routerLink="/login">Logout</button> -->
+<!--<button mat-menu-item>Help</button>-->
+<!-- </mat-menu> -->
+<div [@triggerName]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+</div>
