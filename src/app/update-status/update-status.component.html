@@ -1,0 +1,27 @@
+<div class="topBar row">
+  <h2 mat-dialog-title>Station X</h2>
+  <div><mat-icon class="locationIcon">location_on</mat-icon>Location</div>
+  <!-- <img src="{{url +'timthumb.php?src='+ data.item.photo+'&w=80'}}" class="fade-in"> -->
+</div>
+<!-- <h2 mat-dialog-title>{{data.item.name}}</h2><img src="{{url +'timthumb.php?src='+ data.item.photo+'&w=100'}}"> -->
+<mat-dialog-content class="mat-typography">
+  <h3>Status</h3>
+
+  <mat-button-toggle-group name="fontStyle" class="toggleGroup" aria-label="Font Style" value="status">
+      <mat-button-toggle value="open" (change)="onValChange($event.value)">Open</mat-button-toggle>
+      <mat-button-toggle value="closed" (change)="onValChange($event.value)" >Closed</mat-button-toggle>
+
+  </mat-button-toggle-group>
+
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Amount L.L.</mat-label>
+    <input matInput #amount type="number" placeholder="Ex. 70,000" >
+    <mat-hint >Optional</mat-hint>
+    <!-- <mat-hint align="end">{{amount.value.length}} / 5</mat-hint> -->
+  </mat-form-field>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close (click)="onNoClick()">Cancel</button>
+  <button mat-raised-button  (click)="finalize()"  cdkFocusInitial>Save</button>
+</mat-dialog-actions>

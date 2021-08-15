@@ -33,6 +33,7 @@ import { AboutComponent } from './about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ItemCardComponent } from './item-card/item-card.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import { UpdateStatusComponent } from './update-status/update-status.component';
 
 
 // import { FlexLayoutModule } from "@angular/flex-layout";
@@ -44,7 +45,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     HomeComponent,
     BannerComponent,
     AboutComponent,
-    ItemCardComponent
+    ItemCardComponent,
+    UpdateStatusComponent
   ],
   imports: [
     BrowserModule,

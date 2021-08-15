@@ -1,7 +1,22 @@
-        .open {
-            color: #2aaf62;
-        }
-        
-        .closed {
-            color: rgb(235, 38, 38);
-        }
+.open {
+  color: #2aaf62;
+}
+
+.closed {
+  color: rgb(235, 38, 38);
+}
+.locationIcon {
+  font-size: 0.8rem;
+  margin: 0;
+  padding-right: 0.1rem;
+  text-align: center;
+  width: min-content;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: stretch;
+}
